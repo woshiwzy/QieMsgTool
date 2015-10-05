@@ -1,5 +1,13 @@
 package com.common.util;
 
+import android.util.Log;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+
 /**
  * @author Kevin Kowalewski
  */
@@ -16,9 +24,12 @@ public class ExecShell {
     }
 
     public ArrayList<String> executeCommand(SHELL_CMD shellCmd) {
+
         String line = null;
+
         ArrayList<String> fullResponse = new ArrayList<String>();
         Process localProcess = null;
+
         try {
             localProcess = Runtime.getRuntime().exec(shellCmd.command);
         } catch (Exception e) {

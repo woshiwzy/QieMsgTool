@@ -6,16 +6,9 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-import android.graphics.Path;
-
 public class FileModelTool {
 
-	// static String tag = "FileModelTool";
-	// static {
-	// System.loadLibrary("modeltool");
-	// }
 
-	public static native void changeMode();
 
 	public static void changeFileMode(ArrayList<String> list) throws Exception {
 

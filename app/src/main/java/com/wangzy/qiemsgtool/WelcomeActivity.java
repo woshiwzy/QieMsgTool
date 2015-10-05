@@ -50,7 +50,10 @@ public class WelcomeActivity extends BaseActivity {
         Root root = new Root();
 
         if (root.isDeviceRooted()) {
-            Tool.startActivity(this, MainActivity.class);
+
+            searchRoot(Build.MODEL);
+
+//            Tool.startActivity(this, MainActivity.class);
         } else {
 
             String title = getResources().getString(R.string.main_not_root);
@@ -66,6 +69,8 @@ public class WelcomeActivity extends BaseActivity {
 
 
 //                    android.os.Build.MODEL
+
+
 
                     if (yesOrNo) {
 

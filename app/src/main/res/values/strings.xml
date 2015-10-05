@@ -4,11 +4,16 @@
     <string name="app_name">聊天消息查看器</string>
 
 
+    <string name="confirm">确定</string>
+    <string name="cancell">取消</string>
+
     <string name="welcome_agree">同意上述协议</string>
     <string name="welcome_go">开   始--></string>
     <string name="welcome_warning">用户协议！</string>
     <string name="welcome_warning_content">本软件开发目的是为了用户整理自己的qq账号的通信聊天消息，未经他人允许请勿操作他人的聊天通信记录，否则后果自负！</string>
 
+    <string name="main_not_root">该设备未root，搜索如何root？</string>
+    <string name="main_search_root">搜索</string>
 
 
 </resources>

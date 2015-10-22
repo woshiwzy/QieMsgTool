@@ -31,6 +31,7 @@ public class FileModelTool {
 		proc.destroy();
 	}
 
+
 	public static void changeFileMode(String path) throws Exception {
 		// su命令，的获取之后，必须让其他的命令保证在同一个会话中
 		// 或者使用 su -c commd,格式，例如 su -c ls
@@ -43,6 +44,7 @@ public class FileModelTool {
 		out.close();
 		proc.destroy();
 	}
+
 
 	// 抽取这个路径下得所有目录
 	public static ArrayList<String> getDirs(String path) {

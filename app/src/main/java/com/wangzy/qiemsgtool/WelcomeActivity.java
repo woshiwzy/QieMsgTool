@@ -47,13 +47,23 @@ public class WelcomeActivity extends BaseActivity {
     @OnClick(R.id.buttonGo)
     public void onGoClick() {
 
+//        /data/data/com.tencent.mobileqq
+
+        if(!Tool.isAppInstalled(this,"com.tencent.mobileqq")){
+
+            Tool.ToastShow(this,R.string.main_not_install_qq);
+
+            return;
+
+        }
+
+
+
         Root root = new Root();
 
         if (root.isDeviceRooted()) {
 
-            searchRoot(Build.MODEL);
-
-//            Tool.startActivity(this, MainActivity.class);
+            Tool.startActivity(this, MainActivity.class);
         } else {
 
             String title = getResources().getString(R.string.main_not_root);
@@ -68,15 +78,9 @@ public class WelcomeActivity extends BaseActivity {
                 public void onDone(boolean yesOrNo) {
 
 
-//                    android.os.Build.MODEL
-
-
-
                     if (yesOrNo) {
-
                         searchRoot(Build.MODEL);
                     } else {
-
 
                     }
 

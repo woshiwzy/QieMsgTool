@@ -11,8 +11,8 @@ import butterknife.InjectView;
 public class MainActivity extends BaseActivity {
 
 
-    @InjectView(R.id.textViewIsRoot)
-    TextView textViewIsRoot;
+    @InjectView(R.id.textViewNotify)
+    TextView textViewNotify;
 
 
     @Override

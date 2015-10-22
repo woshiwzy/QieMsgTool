@@ -7,6 +7,7 @@ import com.common.BaseActivity;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity {
 
@@ -21,12 +22,13 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.inject(this);
 
-        initView();
-
     }
 
-    @Override
-    public void initView() {
+
+    @OnClick(R.id.buttonGetChat)
+    public void onButtonGetClick() {
+
+//        /data/data/com.tencent.mobileqq/databases
 
 
     }

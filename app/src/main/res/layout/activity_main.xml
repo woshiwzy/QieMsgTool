@@ -15,23 +15,21 @@
             android:id="@+id/textViewNotify"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/input_item_height"
-            android:text="@string/main_root_notify"
             android:gravity="center"
+            android:text="@string/main_root_notify"
             android:textSize="@dimen/text_size_content" />
-
-
 
 
     </LinearLayout>
 
 
     <Button
-
+        android:id="@+id/buttonGetChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:text="@string/start"
-        android:layout_width="match_parent"
-        android:textSize="@dimen/text_size_content"
-        android:layout_height="wrap_content" />
+        android:textSize="@dimen/text_size_content" />
 
 
 </RelativeLayout>
